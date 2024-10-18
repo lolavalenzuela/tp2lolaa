@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: beige; 
+    color: #150752;
+    font-family: "Raleway", sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3em;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2em;
+}
+
+p {
+    text-align: left;
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 20px; 
+}
+
+nav .center-button {
+    text-align: center; 
+    margin: 20px 0; 
+}
+
+nav a {
+    display: inline-block; 
+    text-transform: uppercase;
+    color: #d02525; 
+    text-decoration: none;
+    padding: 10px 20px; 
+    border: 2px solid #d02525; 
+    border-radius: 5px; 
+}
+
+.imagenes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.imagenes img {
+    width: 28%; 
+    border: 3px solid #150752;
+    transition: transform 0.3s ease, border-radius 0.3s ease;
+}
+
+.imagenes img:hover {
+    transform: scale(1.05);
+    border-radius: 10px;
+}
+
+.main-image {
+    display: block;
+    margin: 20px auto 0; 
+    width: 80%; 
+    border: 3px solid #150752;
+}
+
+.small-image {
+    width: 60%; 
+    margin: 0 auto; 
+    border: 3px solid #150752;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+main,
+header {
+    width: 83.33%;
+    margin: 0 auto ;
+
+}
+
+
+
+@media (max-width: 768px) {
+    div {
+        width: 30%;
+    }
+
+    h1, h2, p {
+        font-size: 1.5em;
+        line-height: 50px;
+    }
+
+    .imagenes img {
+        width: 45%;
+    }
+
+    body {
+        font-size: 10px;
+    }
+}
